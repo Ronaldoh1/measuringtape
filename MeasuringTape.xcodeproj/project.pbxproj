@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		B767C458288D679A00FB463B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B767C457288D679A00FB463B /* AppDelegate.swift */; };
 		B767C45A288D679A00FB463B /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = B767C459288D679A00FB463B /* art.scnassets */; };
-		B767C45C288D679A00FB463B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B767C45B288D679A00FB463B /* ViewController.swift */; };
+		B767C45C288D679A00FB463B /* MeasuringTapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B767C45B288D679A00FB463B /* MeasuringTapeViewController.swift */; };
 		B767C45F288D679A00FB463B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B767C45D288D679A00FB463B /* Main.storyboard */; };
 		B767C461288D679A00FB463B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B767C460288D679A00FB463B /* Assets.xcassets */; };
 		B767C464288D679A00FB463B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B767C462288D679A00FB463B /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		B767C454288D679A00FB463B /* MeasuringTape.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeasuringTape.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B767C457288D679A00FB463B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B767C459288D679A00FB463B /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		B767C45B288D679A00FB463B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B767C45B288D679A00FB463B /* MeasuringTapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasuringTapeViewController.swift; sourceTree = "<group>"; };
 		B767C45E288D679A00FB463B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B767C460288D679A00FB463B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B767C463288D679A00FB463B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 			children = (
 				B767C457288D679A00FB463B /* AppDelegate.swift */,
 				B767C459288D679A00FB463B /* art.scnassets */,
-				B767C45B288D679A00FB463B /* ViewController.swift */,
+				B767C45B288D679A00FB463B /* MeasuringTapeViewController.swift */,
 				B767C45D288D679A00FB463B /* Main.storyboard */,
 				B767C460288D679A00FB463B /* Assets.xcassets */,
 				B767C462288D679A00FB463B /* LaunchScreen.storyboard */,
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B767C45C288D679A00FB463B /* ViewController.swift in Sources */,
+				B767C45C288D679A00FB463B /* MeasuringTapeViewController.swift in Sources */,
 				B767C458288D679A00FB463B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
