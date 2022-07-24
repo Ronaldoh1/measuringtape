@@ -37,6 +37,8 @@ class MeasuringTapeViewController: UIViewController {
         // Create a session configuration
         let configuration = ARWorldTrackingConfiguration()
         
+        configuration.planeDetection = .horizontal // enable plane detection
+        
         // Run the view's session
         sceneView.session.run(configuration)
     }
@@ -66,7 +68,26 @@ class MeasuringTapeViewController: UIViewController {
     }
     
     @objc func tapped(recognizer: UITapGestureRecognizer) {
-        print("tapped")
+        guard let sceneView = recognizer.view as? ARSCNView else { return }
+        let touchLocation = self.sceneView.center
+        
+         let hitTestResults = sceneView.hitTest(touchLocation, types: .featurePoint)
+        
+        if !hitTestResults.isEmpty {
+            guard let hitTestResult = hitTestResults.first else { return }
+            
+            let sphere = SCNSphere(radius: 0.005)
+            let material = SCNMaterial()
+            material.diffuse.contents = UIColor.blue
+            
+            sphere.firstMaterial = material
+            
+            let sphereNode = SCNNode(geometry: sphere)
+            
+            sphereNode.position = SCNVector3(hitTestResult.worldTransform.columns.3.x, hitTestResult.worldTransform.columns.3.y, hitTestResult.worldTransform.columns.3.z)
+            self.sceneView.scene.rootNode.addChildNode(sphereNode)
+        }
+        
     }
     
 }
